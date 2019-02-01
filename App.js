@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
 import Article from './Article';
 
+
 class App extends Component {
-    let {title}=<h1>"The statue of Liberty's torch heads to new Museum"</h1>
-    let {date}=<h2>"November 22,2018"</h2>
-    let {author}=<h3>"Kate Farley"<h3>
-    render(){
+  constructor(props) {
+  super(props);
+    this.state = { title: <q>The Statue of Liberty is torch heads to new museum</q>,
+                   author: "Kate Farley",
+                   date: "Novemeber 22,2018"};
+  }
+    render() {
       return (
+
         <div>
 
-        <Article title={title} author={author} date={date}>
-         <div>
+        <Article title={this.state.title} author={this.state.author} date={this.state.date}>
+
+         <div id="text">
           <article>
           <p>The Statue of Liberty's original torch is getting a new home.</p>
           <p>Made of copper and gold so that it would shine bright, the first torch took a beating from the weather and was replaced by a replica in 1984.</p>
@@ -29,7 +35,8 @@ class App extends Component {
           <p>The <q>inspiration gallery,</q> which is where the torch will live, will have floor-to-ceiling glass windows looking out at Lower Manhattan, including the World Trade Center. </p>
           </article>
          </div>
-        </Article>
+         </Article>
+
       </div>
     );
   }
