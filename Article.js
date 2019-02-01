@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 import PropTypes from 'prop-types';
 
 
@@ -6,15 +6,21 @@ import PropTypes from 'prop-types';
     render(){
       return(
         <div>
-        <h1>{this.props.title}</h1>
-        <h2>{this.props.author}</h2>
-        <h3>{this.props.date}</h3>
+          <h1>{this.props.title}</h1>
+          <h2> {this.props.author}</h2>
+          <h3> {this.props.date}</h3>
+          <div>{this.props.children}</div>
         </div>
       );
 
     }
   }
+  Article.PropTypes = {
+    title  : PropTypes.string.isRequired,
+    author : PropTypes.string.isRequired,
+    date   : PropTypes.string.isRequired,
+  };
 
-  // disply the title author date
+
 
 export default Article;
