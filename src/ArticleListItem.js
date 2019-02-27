@@ -14,7 +14,7 @@ class ArticleListItem extends React.Component{
             <li align="right" className='space'><address>By: {this.props.author}</address></li>
             <li align="right" className='datepanel'>{this.props.date}</li>
           </ul>
-  
+
   );
 }
 }
