@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
-import Text from './Text';
-import ArticleTable from './ArticleTable';
-import articles from './data/articles.json';
+import ArticleGrid from './ArticleGrid';
+//import articles from './articles.json';
+
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Text />
-        <ArticleTable articles={articles} />
+
+    render() {
+      return (
+
+        <div>
+
+        <ArticleGrid />
+
       </div>
     );
   }
