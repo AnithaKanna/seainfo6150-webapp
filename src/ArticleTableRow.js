@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+//import Checkbox from './Checkbox';
+
 
 class ArticleTableRow extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      //author:
       selected: false
     };
   }
@@ -19,10 +22,10 @@ class ArticleTableRow extends React.Component {
 
     let selectedStatus;
     if (this.state.selected) {
-      selectedStatus = 'Yes';
+      selectedStatus = 'Ticked';
     }
     else {
-      selectedStatus = 'No';
+      selectedStatus = 'Not Ticked';
     }
 
     // paste this onClick handler into your checkbox;
@@ -30,7 +33,14 @@ class ArticleTableRow extends React.Component {
     // onClick={this.onClick.bind(this)}
     //
     return (
-      <tr><td>Replace this div with your table row HTML</td></tr>
+             <tr align="left">
+                <td><input type="checkbox" onClick={this.onClick.bind(this)}/></td>
+                <td><p>This box is {selectedStatus}</p></td>
+                <td><address>{this.props.author}</address></td>
+                <td><time datetime>{this.props.date}</time></td>
+                <td>{this.props.shortText}</td>
+              </tr>
+    //  <div>Replace this div with your table row HTML</div>
     );
   }
 

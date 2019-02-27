@@ -1,0 +1,42 @@
+.articlefooter {
+  width: 986px;
+  height: 60px;
+
+  background-color: #CE2525;
+  padding: 2em;
+  bottom: 0;
+}
+.footerfont {
+  color : white;
+  font-size: 12px;
+}
+.articleheader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #CE2525;
+  padding-left: 1em;
+  padding-top: 2em;
+  color: white;
+  width:1034px;
+  height: 80px;
+}
+.rightcss {
+  padding-top: 1.2em;
+  padding-right: 1em;
+}
+.leftcss {
+  padding-bottom: 3em;
+}
+.entireArticle {
+  border-color: Black;
+  border-width: thin;
+  border-style: solid;
+  padding: 0.1em;
+  width: 1052px;
+}
+.emptyClass {
+  background-color: white;
+  width:1034px;
+  height: 20px;
+}

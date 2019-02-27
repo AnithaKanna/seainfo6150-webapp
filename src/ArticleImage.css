@@ -1,0 +1,12 @@
+.img {
+  height: 80px;
+  width: 8em;
+  border-color: #CE2525 ;
+  border-width: 9px;
+  border-style: solid;
+  border-radius: 50%;
+  
+  margin-top: 15px;
+  margin-left: 13px;
+  margin-right: 0px;
+}
