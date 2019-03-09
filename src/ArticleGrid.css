@@ -1,0 +1,48 @@
+.articlefooter {
+  width: auto;
+  height: auto;
+
+  background-color: #CE2525;
+  padding: 2em;
+  bottom: 0;
+}
+.footerfont {
+  color : white;
+  font-size: 12px;
+}
+.articleheader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #CE2525;
+  padding-left: 1em;
+  padding-top: 2em;
+  color: white;
+  width:auto;
+  height: auto;
+}
+.rightcss {
+  padding-top: 1.2em;
+  padding-right: 1em;
+}
+.leftcss {
+  padding-bottom: 3em;
+}
+.entireArticle {
+  border-color: Black;
+  border-width: thin;
+  border-style: solid;
+  padding: 0.1em;
+  width: auto;
+}
+.emptyClass {
+  background-color: white;
+  width:auto;
+  height: 30px;
+}
+@media screen and (max-width: 800px) {
+  .articleheader .articlefooter .emptyClass  {
+    width:100%;
+  }
+}
+
