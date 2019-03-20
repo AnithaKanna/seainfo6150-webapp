@@ -9,8 +9,13 @@
     padding: 0.2em;
     line-height: 1;
     margin: 1em;
+<<<<<<< Updated upstream
     width: 700px;
     height:120px;
+=======
+    width: auto;
+    height:auto;
+>>>>>>> Stashed changes
     padding-bottom: 1em;
 
   }
@@ -60,7 +65,12 @@
   padding-top: 2.5em;
   padding-bottom: 2.5em;
   padding-left: 1em;
+<<<<<<< Updated upstream
 
+=======
+  width:750px;
+  padding-right: 1em;
+>>>>>>> Stashed changes
 }
 .clear {
     clear: both;
